@@ -1,4 +1,4 @@
-FROM golang:1.18
+FROM golang:1.19
 
 LABEL maintainer="JairoTan <tsf678@163.com>"
 
@@ -47,7 +47,7 @@ RUN apt-get clean && \
     rm /var/log/lastlog /var/log/faillog
 
 # 设置工作目录
-WORKDIR /usr/src/code
+WORKDIR /usr/src/go-project
 
 EXPOSE 8000
 EXPOSE 8001
